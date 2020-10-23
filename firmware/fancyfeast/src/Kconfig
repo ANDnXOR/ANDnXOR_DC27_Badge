@@ -1,0 +1,49 @@
+config LED_RGB_HEIGHT
+	int "Number of RGB LEDs High"
+	default 9
+	help
+	  Number of RGB LEDs high to use
+
+config LED_RGB_WIDTH
+	int "Number of RGB LEDs Wide"
+	default 13
+	help
+	  Number of RGB LEDs wide to use
+
+config LED_BRIGHTNESS_DEFAULT
+	int "Default LED brightness, can be overriden by user settings"
+	default 25
+	help
+		The default value to use for LED brightness in the event the user has not overriden it
+
+config CRON_JERB_INTERVAL
+	int "Number of milliseconds between cron jerbs"
+	default 60000
+	range 60000 3600000
+	help
+		Number of milliseconds between cron jerbs	
+
+config ANDNXOR_SHELL_PROMPT
+	string "The prompt to show for the shell"
+	default "and!xor $ "
+	help
+		The prompt to show for the shell
+
+config ANDNXOR_SHELL_ROOT_PROMPT
+	string "The prompt to show for the root shell"
+	default "and!xor # "
+	help
+		The prompt to show for the root shell
+
+config ANDNXOR_UI_INTERSTITIAL_TIME_MS
+	int "How long to show interstitial when switching menu items in ms"
+	default 2000
+	range 100 10000
+	help
+		"How long to show interstitial when switching menu items in ms"
+
+config ANDNXOR_TEST_FIRMWARE
+	bool "Build test firmware for use in production"
+	default n
+	help
+		"Build test firmware for use in production"

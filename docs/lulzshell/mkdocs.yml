@@ -1,0 +1,6 @@
+site_name: LULZSHELL
+pages:
+  - Home: index.md
+theme:
+  name: 'bootstrap386'
+

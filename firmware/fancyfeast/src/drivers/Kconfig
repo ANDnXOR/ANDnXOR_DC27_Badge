@@ -1,0 +1,54 @@
+rsource "at24c02.kconfig"
+rsource "iqs333.kconfig"
+rsource "spi_nor_reset.kconfig"
+
+menuconfig IS31FL3741
+	bool "IS31FL3741 LED Matrix driver"
+	help
+		Include LED Matrix Driver
+
+if IS31FL3741
+
+config IS31FL3741_DEV_NAME
+	string "IS31FL3741 device name"
+	default "IS31FL3741"
+	help
+	  Device name for IS31FL3741 LED Matrix driver.
+
+config IS31FL3741_I2C_ADDRESS
+	hex "IS31FL3741 I2C slave address"
+	range 0x30 0x33
+	default 0x30
+	help
+	  Specify the I2C slave address for the IS31FL3741 LED driver.
+	  See Datasheet "Table 1 Slave Address"
+
+config IS31FL3741_SDB_PIN
+	int "IS31FL3741 SDB Pin Number"
+	range 0 64
+	default 18
+	help 
+		Specify the GPIO pin number of the SDB Pin
+
+config IS31FL3741_INTB_PIN
+	int "IS31FL3741 INTB Pin Number"
+	range 0 64
+	default 30
+	help 
+		Specify the GPIO pin number of the INTB Pin
+
+config IS31FL3741_INIT_PRIORITY
+	int "IS31FL3741 Initialization Priority"
+	range 61 100
+	default 90
+	help
+		System Initialization priority for IS31FL3741 driver
+
+config IS31FL3741_I2C_MASTER_DEV_NAME
+	string "I2C master where IS31FL3741 is connected"
+	default "I2C_0"
+	help
+	  Specify the device name of the I2C master device to which
+	  IS31FL3741 is connected.
+
+endif

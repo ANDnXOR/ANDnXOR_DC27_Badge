@@ -1,0 +1,4 @@
+#define eye4_width 4
+#define eye4_height 4
+static unsigned char eye4_bits[] = {
+   0x0f, 0x0f, 0x00, 0x0f };

@@ -1,0 +1,55 @@
+config MESH_STATUS_PUBLISH_INTERVAL
+	int "Number of milliseconds between status publishing"
+	default 90000
+	range 10000 600000
+	help
+		Number of milliseconds between status publishing
+
+config ANDNXOR_SHELL_TTL
+	int "Maximum hops for shell commands"
+	default 4
+	range 1 6
+	help
+		"How many hops (TTL) are allowed for shell commands"
+
+config MESH_BLING_PUBLISH_INTERVAL
+	int "Number of milliseconds between bling publishing"
+	default 60000
+	range 10000 600000
+	help
+		Number of milliseconds between bling publishing
+
+config ANDNXOR_BLING_TTL
+	int "Maximum hops for bling state sharing"
+	default 0
+	range 0 6
+	help
+		"How many hops (TTL) are allowed for bling state sharing"
+
+config ANDNXOR_C2_RUNTIME_MS
+	int "How long should C2 bling modes run"
+	default 60000
+	range 1000 360000
+	help
+		"How long should C2 bling modes run"
+
+config ANDNXOR_C2_TTL
+	int "Maximum hops for C2 messages"
+	default 5
+	range 0 6
+	help
+		"How many hops (TTL) are allowed for C2 messages"
+
+config ANDNXOR_SOCIAL_TTL
+	int "Maximum hops for social sync"
+	default 2
+	range 0 6
+	help
+		"How many hops (TTL) are allowed for social sync"
+
+config ANDNXOR_TIME_TTL
+	int "Maximum hops for time sync"
+	default 6
+	range 1 8
+	help
+		"How many hops (TTL) are allowed for time sync"

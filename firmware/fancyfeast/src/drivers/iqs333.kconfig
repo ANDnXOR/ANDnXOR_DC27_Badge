@@ -1,0 +1,50 @@
+menuconfig IQS333
+	bool "IQS333 Captouch Driver"
+	help
+		Include Captouch driver
+
+if IQS333
+
+config IQS333_DEV_NAME
+	string "IQS333 device name"
+	default "IQS333"
+	help
+	  Device name for IQS333 Captouch driver.
+
+config IQS333_I2C_ADDRESS
+	hex "IQS333 I2C slave address"
+	range 0x64 0x67
+	default 0x64
+	help
+	  Specify the I2C slave address for the IQS333 captouch driver.
+	  See Datasheet "Table 1 Slave Address"
+
+config IQS333_INIT_PRIORITY
+	int "IQS333 Initialization Priority"
+	range 61 100
+	default 90
+	help
+		System Initialization priority for IQS333 driver	  
+
+config IQS333_I2C_MASTER_DEV_NAME
+	string "I2C master where IQS333 is connected"
+	default "I2C_0"
+	help
+	  Specify the device name of the I2C master device to which
+	  IQS333 is connected.
+
+config IQS333_RDY_GPIO_DEV
+	string "IQS333 RDY Pin GPIO Device"
+	default "GPIO_1"
+	help 
+		Specify the GPIO device name of the RDY Pin
+
+
+config IQS333_RDY_PIN
+	int "IQS333 RDY Pin Number"
+	range 0 64
+	default 10
+	help 
+		Specify the GPIO pin number of the RDY Pin
+
+endif

@@ -1,0 +1,6 @@
+{
+	"C_Cpp.configurationWarnings": "Disabled",
+	"C_Cpp.intelliSenseEngineFallback": "Enabled",
+	"C_Cpp.clang_format_style": "{BasedOnStyle: Chromium, ColumnLimit: 100}",
+	"C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Chromium, ColumnLimit: 100}"
+}

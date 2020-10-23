@@ -1,0 +1,36 @@
+menuconfig AT24C02
+	bool "AT24C02 EEPROM Driver"
+	help
+		Include AT24C02 EEPROM driver
+
+if AT24C02
+
+config AT24C02_DEV_NAME
+	string "AT24C02 device name"
+	default "AT24C02"
+	help
+	  Device name for AT24C02 EEPROM driver.
+
+config AT24C02_I2C_ADDRESS
+	hex "AT24C02 I2C slave address"
+	range 0x50 0x57
+	default 0x50
+	help
+	  Specify the I2C slave address for the AT24C02 EEPROM driver.
+	  See Datasheet "Table 1 Slave Address"
+
+config AT24C02_INIT_PRIORITY
+	int "AT24C02 Initialization Priority"
+	range 61 100
+	default 90
+	help
+		System Initialization priority for AT24C02 driver	  
+
+config AT24C02_I2C_MASTER_DEV_NAME
+	string "I2C master where AT24C02 is connected"
+	default "I2C_0"
+	help
+	  Specify the device name of the I2C master device to which
+	  AT24C02 is connected.
+
+endif

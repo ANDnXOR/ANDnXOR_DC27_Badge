@@ -1,0 +1,23 @@
+menuconfig ANDNXOR_SPI_NOR
+	bool "AND!XOR SPI NOR Driver extra options"
+	help
+		Include use AND!XOR SPI NOR driver options
+
+if ANDNXOR_SPI_NOR
+
+config ANDNXOR_SPI_NOR_RESET_PIN
+	int "SPI NOR Reset Pin Number"
+	range 0 64
+	default 23
+	help 
+		Specify the GPIO pin number of the SPI Nor Reset Pin
+
+
+config ANDNXOR_SPI_NOR_RESET_INIT_PRIORITY
+	int "SPI NOR Reset Initialization Priority"
+	range 61 100
+	default 75
+	help
+		System Initialization priority for SPI NOR Reset Task	
+
+endif

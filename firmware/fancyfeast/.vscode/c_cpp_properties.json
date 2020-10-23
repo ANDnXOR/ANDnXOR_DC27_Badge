@@ -1,0 +1,121 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceFolder}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/../../zephyr/include",
+                    "${workspaceFolder}/../../zephyr/arch/arm/include",
+                    "${workspaceFolder}/../../zephyr/tests/ztest/include",
+                    "${workspaceFolder}/build/zephyr/include/generated"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include/c++/7",
+                "/usr/include/x86_64-linux-gnu/c++/7",
+                "/usr/include/c++/7/backward",
+                "/usr/local/include",
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/include",
+                "${workspaceFolder}",
+                "${workspaceFolder}/../../zephyr/arch/arm/include",
+                "${workspaceFolder}/../../zephyr/boards/posix/nrf52_bsim/fake",
+                "${workspaceFolder}/../../zephyr/ext/fs/fat/include",
+                "${workspaceFolder}/../../zephyr/ext/hal/nordic",
+                "${workspaceFolder}/../../zephyr/ext/hal/nordic/nrfx",
+                "${workspaceFolder}/../../zephyr/ext/hal/nordic/nrfx/drivers/include",
+                "${workspaceFolder}/../../zephyr/ext/hal/nordic/nrfx/mdk",
+                "${workspaceFolder}/../../zephyr/ext/lib/mgmt/mcumgr/cmd/img_mgmt/include",
+                "${workspaceFolder}/../../zephyr/ext/lib/mgmt/mcumgr/cmd/os_mgmt/include",
+                "${workspaceFolder}/../../zephyr/ext/lib/mgmt/mcumgr/cmd/stat_mgmt/include",
+                "${workspaceFolder}/../../zephyr/include",
+                "${workspaceFolder}/../../zephyr/include/arch/arm",
+                "${workspaceFolder}/boards/arm/nrf52840_pca10056",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/../../zephyr/ext/fs/nffs/include",
+                "${workspaceFolder}/build/zephyr/include/generated"
+            ],
+            "defines": [],
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "/usr/include/c++/7",
+                    "/usr/include/x86_64-linux-gnu/c++/7",
+                    "/usr/include/c++/7/backward",
+                    "/usr/local/include",
+                    "/usr/include/x86_64-linux-gnu",
+                    "/usr/include",
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/../../zephyr/arch/arm/include",
+                    "${workspaceFolder}/../../zephyr/boards/posix/nrf52_bsim/fake",
+                    "${workspaceFolder}/../../zephyr/ext/fs/fat/include",
+                    "${workspaceFolder}/../../zephyr/ext/hal/nordic",
+                    "${workspaceFolder}/../../zephyr/ext/hal/nordic/nrfx",
+                    "${workspaceFolder}/../../zephyr/ext/hal/nordic/nrfx/drivers/include",
+                    "${workspaceFolder}/../../zephyr/ext/hal/nordic/nrfx/mdk",
+                    "${workspaceFolder}/../../zephyr/ext/lib/mgmt/mcumgr/cmd/img_mgmt/include",
+                    "${workspaceFolder}/../../zephyr/ext/lib/mgmt/mcumgr/cmd/os_mgmt/include",
+                    "${workspaceFolder}/../../zephyr/ext/lib/mgmt/mcumgr/cmd/stat_mgmt/include",
+                    "${workspaceFolder}/../../zephyr/include",
+                    "${workspaceFolder}/../../zephyr/include/arch/arm",
+                    "${workspaceFolder}/boards/arm/nrf52840_pca10056",
+                    "${workspaceFolder}/src"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "configurationProvider": "vector-of-bool.cmake-tools"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
+                "${workspaceFolder}",
+                "${workspaceFolder}/zephyr"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/zephyr"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

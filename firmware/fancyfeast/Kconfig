@@ -1,0 +1,17 @@
+mainmenu "AND!XOR DC27 Fancy Feast"
+
+# Your application configuration options go here
+
+menu "AND!XOR"
+rsource "src/Kconfig"
+rsource "src/drivers/Kconfig"
+rsource "src/mesh/Kconfig"
+endmenu
+
+# Sources Kconfig.zephyr in the Zephyr root directory.
+#
+# Note: All 'source' statements work relative to the Zephyr root directory (due
+# to the $srctree environment variable being set to $ZEPHYR_BASE). If you want
+# to 'source' relative to the current Kconfig file instead, use 'rsource' (or a
+# path relative to the Zephyr root).
+source "Kconfig.zephyr"

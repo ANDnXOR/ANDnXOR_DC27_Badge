@@ -1,0 +1,108 @@
+/*****************************************************************************
+ * Made with beer and late nights in California.
+ *
+ * (C) Copyright 2017-2019 AND!XOR LLC (https://andnxor.com/).
+ *
+ * PROPRIETARY AND CONFIDENTIAL UNTIL AUGUST 11th, 2019 then,
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ADDITIONALLY:
+ * If you find this source code useful in anyway, use it in another electronic
+ * conference badge, or just think it's neat. Consider buying us a beer
+ * (or two) and/or a badge (or two). We are just as obsessed with collecting
+ * badges as we are in making them.
+ *
+ * Contributors:
+ * 	@andnxor
+ * 	@zappbrandnxor
+ * 	@hyr0n1
+ * 	@bender_andnxor
+ * 	@lacosteaef
+ *  @f4nci3
+ *  @Cr4bf04m
+ *****************************************************************************/
+
+#include <zephyr.h>
+#define LOG_LEVEL 4
+#include <logging/log.h>
+LOG_MODULE_REGISTER(ff_post);
+
+#include "ff_post.h"
+
+#define STR_OK "..OK"
+#define STR_FAIL "Fail"
+
+static uint16_t m_post_state = 0;
+
+uint16_t ff_post_state_get() { return m_post_state; }
+
+/**
+ * @brief Dump POST status to log
+ */
+void ff_post_dump() {
+
+  LOG_INF("============ POST ============");
+
+   if ((m_post_state & FF_POST_ADDON_DEVICE) > 0)
+    LOG_INF("Addon I2C Device.........." STR_OK);
+  else
+    LOG_INF("Addon I2C Device.........." STR_FAIL);
+
+  if ((m_post_state & FF_POST_IS31FL3741_ACK) > 0)
+    LOG_INF("LED Driver ACK............" STR_OK);
+  else
+    LOG_INF("LED Driver ACK............" STR_FAIL);
+
+  if ((m_post_state & FF_POST_IS31FL3741_PRODUCT_ID) > 0)
+    LOG_INF("LED Driver ID............." STR_OK);
+  else
+    LOG_INF("LED Driver ID............." STR_FAIL);
+
+  if ((m_post_state & FF_POST_IS31FL3741_OPEN) > 0)
+    LOG_INF("LED Driver Open LED......." STR_OK);
+  else
+    LOG_INF("LED Driver Open LED......." STR_FAIL);
+
+  if ((m_post_state & FF_POST_IS31FL3741_SHORT) > 0)
+    LOG_INF("LED Driver Short LED......" STR_OK);
+  else
+    LOG_INF("LED Driver Short LED......" STR_FAIL);
+
+  if ((m_post_state & FF_POST_FS_MOUNT) > 0)
+    LOG_INF("Filesystem Mounted........" STR_OK);
+  else
+    LOG_INF("Filesystem Mounted........" STR_FAIL);
+
+  if ((m_post_state & FF_POST_IQS333_ACK) > 0)
+    LOG_INF("IQS333 ACK................" STR_OK);
+  else
+    LOG_INF("IQS333 ACK................" STR_FAIL);
+
+  if ((m_post_state & FF_POST_IQS333_DEVICE_INFO) > 0)
+    LOG_INF("IQS333 Device Info........" STR_OK);
+  else
+    LOG_INF("IQS333 Device Info........" STR_FAIL);
+
+  LOG_INF("==============================");
+}
+
+inline void ff_post_failed(uint16_t mask) {
+  LOG_ERR("Failed 0x%04x", mask);
+  m_post_state &= ~mask;
+}
+
+inline void ff_post_success(uint16_t mask) {
+  LOG_INF("Success 0x%04x", mask);
+  m_post_state |= mask;
+}

@@ -1,0 +1,39 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to LULZSHELL\n\n\nLULZSHELL is the very core of the AND!XOR Indie badge for DEF CON 27. It is the primary user interface for maximum lulz, interaction with B.E.N.D.E.R. 2.0, and launching point for all BOTNET 3.0 activities. This documentation serves as a semi-comprehesive source for all things LULZSHELL.\n\n\n \n\n\n\n\nBling\n\n\n\n\nRICKROLL\n: Primary bling tool\n\n\n\n\n RICKROLL \n\n\nThe \nRICKROLL\n command is used to run and manipulate the current bling mode. Syntax is \nRICKROLL WIT \nmode\n. \n\n\nModes:\n\n\n\n\nBOUNCY: Scrolly text left and right\n\n\nROUND: Spinning lines on the eyes\n\n\nCOPYCAT: Play bling from nearby badges\n\n\nDOOM: FIRE!\n\n\nFADE: Basic color fade\n\n\nFLAPPY: Flappy pixel game\n\n\nFLASHAHHHHH: Flashing color fade\n\n\nDOTZ: Random dots mode\n\n\nKIT: Knight Rider\n\n\nLAZERS: Color horizontal lines\n\n\nLINES: Random lines\n\n\nMATRIX: NEO!\n\n\nRAINBOWZ: Colorful rainbow mode, try the right captouch wheel\n\n\nPURTY: RGB bling modes\n\n\nWERDZ: Scrolling bling mode, syntax: \nRICKROLL WIT WERDZ \"text blah blah blah\"\n\n\nCLOCK: Current time (at least what badge thinks is current time) bling mode\n\n\nWAVE: Ride the wave\n\n\n\n\n\n\n\n\nB.E.N.D.E.R. 2.0\n\n\n\n\nBENDER\n: Game status\n\n\nDRINK\n: Drink your favorite in-game brews\n\n\nE\n: Go East\n\n\nFLUSH\n: \u00af\\_(\u30c4)_/\u00af\n\n\nHACK\n: Jack of all trades command in B.E.N.D.E.R.\n\n\nLOOK\n: Observe things around you\n\n\nN\n: Go North\n\n\nS\n: Go South\n\n\nSTEAL\n: Take something\n\n\nW\n: Go West\n\n\nWALK\n: Long way to go\n\n\n\n\n\n\n\n\nInteractive\n\n\n\n\nCOMZ\n: Badge mesh control\n\n\nCOMZ R\n: Get the local badge address\n\n\nCOMZ ON\n: Enable badge mesh\n\n\nCOMZ OFF\n: Disable badge mesh\n\n\n\n\n\n\nFRENDZ\n: Social status (you will always have yourself as a friend)\n\n\nGRAFFITI\n: Graffiti wall - used by text scroll bling\n\n\nGRAFFITI SHOW\n: Show the current wall\n\n\nGRAFFITI \nmessage\n: Write a message on the wall\n\n\n\n\n\n\nMEOW\n: Redacted\n\n\nSCRATCH \naddress\n: Ping badges\n\n\n\n\n\n\n\n\nFile System\n\n\n\n\nFLOSS \npath\n: List Files\n\n\nPLAEC \nfile\n \nbyte\n \nbyte\n \nbyte\n...\n: Write up to 64 bytes to the end of a file (in hex)\n\n\nBURN \nfile\n: Delete a file\n\n\nNOM \nfile\n: Read a file\n\n\n\n\n\n\n\n\nUtilities\n\n\n\n\nAWESUM \nstring\n: Best hash tool every made\n\n\nBADGE \ndata\n: Simple \nbadgebus\n parser (thanks @tymkrs)\n\n\nEKOZ \nstring\n: Simple echo tool\n\n\nEMACZ\n: Robust file editor, now with foot pedal support!\n\n\nEXTRAS\n: Shitty Addon 1.69bis control\n\n\nEXTRAS CREATE \ndata\n: Provision an eeprom SAO with data\n\n\nEXTRAS MODE \nmode\n: Set the SAO GPIO mode\n\n\nEXTRAS READ \naddress\n: Read data from address on eeprom\n\n\nEXTRAS WRITE \naddress\n \ndata\n: Write data to address on eeprom\n\n\n\n\n\n\nHELP\n: As if you need it\n\n\nLET \nsetting\n B \nvalue\n: Badge settings control\n\n\nPAWS\n: Pause shell for n milliseconds\n\n\nSYSTUM\n: Badge control tool\n\n\nSYSTUM CEREAL\n: Get badge serial number\n\n\nSYSTUM VERSHUN\n: Get badge firmware version information\n\n\n\n\n\n\nTABLE FLIP\n: Badge reboot tool\n\n\nTROLL \nfile\n: Runs a file\n\n\nVISIBLE \nsetting\n: Print badge setting\n\n\nWHENRIT\n: Get the current time (according to the badge)\n\n\nWHOAMI\n: Standard unix whoami command\n\n\nWIPE\n: Clear the screen", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-lulzshell", 
+            "text": "LULZSHELL is the very core of the AND!XOR Indie badge for DEF CON 27. It is the primary user interface for maximum lulz, interaction with B.E.N.D.E.R. 2.0, and launching point for all BOTNET 3.0 activities. This documentation serves as a semi-comprehesive source for all things LULZSHELL.", 
+            "title": "Welcome to LULZSHELL"
+        }, 
+        {
+            "location": "/#bling", 
+            "text": "RICKROLL : Primary bling tool    RICKROLL   The  RICKROLL  command is used to run and manipulate the current bling mode. Syntax is  RICKROLL WIT  mode .   Modes:   BOUNCY: Scrolly text left and right  ROUND: Spinning lines on the eyes  COPYCAT: Play bling from nearby badges  DOOM: FIRE!  FADE: Basic color fade  FLAPPY: Flappy pixel game  FLASHAHHHHH: Flashing color fade  DOTZ: Random dots mode  KIT: Knight Rider  LAZERS: Color horizontal lines  LINES: Random lines  MATRIX: NEO!  RAINBOWZ: Colorful rainbow mode, try the right captouch wheel  PURTY: RGB bling modes  WERDZ: Scrolling bling mode, syntax:  RICKROLL WIT WERDZ \"text blah blah blah\"  CLOCK: Current time (at least what badge thinks is current time) bling mode  WAVE: Ride the wave", 
+            "title": "Bling"
+        }, 
+        {
+            "location": "/#bender-20", 
+            "text": "BENDER : Game status  DRINK : Drink your favorite in-game brews  E : Go East  FLUSH : \u00af\\_(\u30c4)_/\u00af  HACK : Jack of all trades command in B.E.N.D.E.R.  LOOK : Observe things around you  N : Go North  S : Go South  STEAL : Take something  W : Go West  WALK : Long way to go", 
+            "title": "B.E.N.D.E.R. 2.0"
+        }, 
+        {
+            "location": "/#interactive", 
+            "text": "COMZ : Badge mesh control  COMZ R : Get the local badge address  COMZ ON : Enable badge mesh  COMZ OFF : Disable badge mesh    FRENDZ : Social status (you will always have yourself as a friend)  GRAFFITI : Graffiti wall - used by text scroll bling  GRAFFITI SHOW : Show the current wall  GRAFFITI  message : Write a message on the wall    MEOW : Redacted  SCRATCH  address : Ping badges", 
+            "title": "Interactive"
+        }, 
+        {
+            "location": "/#file-system", 
+            "text": "FLOSS  path : List Files  PLAEC  file   byte   byte   byte ... : Write up to 64 bytes to the end of a file (in hex)  BURN  file : Delete a file  NOM  file : Read a file", 
+            "title": "File System"
+        }, 
+        {
+            "location": "/#utilities", 
+            "text": "AWESUM  string : Best hash tool every made  BADGE  data : Simple  badgebus  parser (thanks @tymkrs)  EKOZ  string : Simple echo tool  EMACZ : Robust file editor, now with foot pedal support!  EXTRAS : Shitty Addon 1.69bis control  EXTRAS CREATE  data : Provision an eeprom SAO with data  EXTRAS MODE  mode : Set the SAO GPIO mode  EXTRAS READ  address : Read data from address on eeprom  EXTRAS WRITE  address   data : Write data to address on eeprom    HELP : As if you need it  LET  setting  B  value : Badge settings control  PAWS : Pause shell for n milliseconds  SYSTUM : Badge control tool  SYSTUM CEREAL : Get badge serial number  SYSTUM VERSHUN : Get badge firmware version information    TABLE FLIP : Badge reboot tool  TROLL  file : Runs a file  VISIBLE  setting : Print badge setting  WHENRIT : Get the current time (according to the badge)  WHOAMI : Standard unix whoami command  WIPE : Clear the screen", 
+            "title": "Utilities"
+        }
+    ]
+}
